@@ -42,12 +42,12 @@ export function Hero({ image }: { image: GalleryImage | null }) {
           id="hero-title"
           className="mx-auto mt-6 max-w-5xl text-[2.75rem] leading-[0.98] font-black tracking-[-0.035em] text-balance text-ink min-[400px]:text-5xl sm:text-7xl lg:text-[6.25rem]"
         >
-          Балалық шақтың{" "}
+          Балдай{" "}
           <span className="relative inline-block text-grape">
-            бақытты
+            тәтті
             <Squiggle className="absolute -bottom-2 left-0 h-3 w-full text-sun sm:-bottom-3 sm:h-4" />
           </span>{" "}
-          мекені
+          балалық шақ
         </h1>
 
         <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-pretty text-muted sm:text-xl">
