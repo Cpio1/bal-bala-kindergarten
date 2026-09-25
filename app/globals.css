@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Палитра Bal-bala (по логотипу): фиолетовый, розовый, солнечно-жёлтый,
+   бирюзовый — на светлом кремовом фоне. Яркие цвета — только акценты.
+   ------------------------------------------------------------------ */
+@theme {
+  --color-grape: #a526d5; /* основной акцент: кнопки, ссылки */
+  --color-grape-deep: #8c1db8; /* hover для фиолетового */
+  --color-grape-soft: #f5eafb; /* светлая подложка */
+  --color-rose: #f43f68;
+  --color-rose-soft: #feecf0;
+  --color-sun: #ffd633;
+  --color-sun-deep: #d99a00; /* жёлтый для иконок на светлом фоне (читаемость) */
+  --color-sun-soft: #fff6d1;
+  --color-mint: #2fae88; /* бирюзовый для иконок (чуть темнее #48C7A1 — читаемость) */
+  --color-mint-bright: #48c7a1;
+  --color-mint-soft: #e5f6f0;
+  --color-cream: #fffdf4; /* основной фон */
+  --color-mist: #fbf5fe; /* очень светлый сиреневый — фон чередующихся секций */
+  --color-shell: #fbf6e8; /* чуть темнее фона — заглушки фото */
+  --color-ink: #2b2140; /* основной текст — глубокий сливовый */
+  --color-muted: #6c6480; /* второстепенный текст */
+
+  --shadow-soft: 0 30px 60px -32px rgb(96 30 130 / 0.35);
+  --shadow-card: 0 14px 34px -22px rgb(96 30 130 / 0.28);
+  --shadow-card-hover: 0 28px 50px -26px rgb(96 30 130 / 0.38);
+}
+
+@theme inline {
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem; /* высота шапки, чтобы якоря не прятались под ней */
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    overflow-x: clip;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-grape-soft);
+    color: var(--color-grape-deep);
+  }
+}
+
+/* Контейнер: 16px по бокам на телефоне */
+@utility container-x {
+  width: 100%;
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+
+  @media (width >= 40rem) {
+    padding-inline: 2rem;
+  }
+}
+
+/* Мягкое появление блоков при прокрутке (см. components/ui/Reveal.tsx) */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Органические формы для фото и блоков */
+@utility shape-hero {
+  border-radius: 44% 56% 52% 48% / 30% 34% 66% 70%;
+}
+
+@utility shape-soft {
+  border-radius: 3rem 5rem 3rem 5rem / 4rem 3rem 5rem 3rem;
+}
+
+@utility shape-arch {
+  border-radius: 999px 999px 3rem 3rem;
+}
+
+/* Лёгкое «парение» декоративных фигур */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float 9s ease-in-out infinite;
+}
+
+.animate-sway {
+  animation: sway 7s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
