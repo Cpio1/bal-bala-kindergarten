@@ -20,6 +20,9 @@ export const site = {
   heroCandidates: ["/images/hero.jpg", "/images/hero.jpeg", "/images/hero.png", "/images/hero.webp"],
 };
 
+/** Ссылка на папку с документами в Google Drive (раздел «Құжаттар»). Замените на настоящую ссылку. */
+export const documentsUrl = "GOOGLE_DRIVE_LINK";
+
 /** Ссылка на карту по адресу (открывается в новой вкладке). */
 export const mapLinkUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
   `Алматы, ${site.address}`,

@@ -89,10 +89,11 @@ export function Header({ logo }: { logo: ReactNode }) {
             </ul>
           </nav>
   
+          {/* На lg (1024–1279px) кнопка скрыта: шесть пунктов меню иначе не помещаются, «Байланыс» есть в меню */}
           <div className="flex items-center gap-2">
             <a
               href="#contacts"
-              className="hidden h-12 items-center rounded-full bg-grape px-6 text-[15px] font-bold text-white transition-all duration-300 shadow-[0_10px_24px_-12px_rgb(165_38_213/0.7)] hover:-translate-y-0.5 hover:bg-grape-deep focus-visible:ring-4 focus-visible:ring-grape/30 focus-visible:outline-none sm:inline-flex"
+              className="hidden h-12 items-center rounded-full bg-grape px-6 text-[15px] font-bold text-white transition-all duration-300 shadow-[0_10px_24px_-12px_rgb(165_38_213/0.7)] hover:-translate-y-0.5 hover:bg-grape-deep focus-visible:ring-4 focus-visible:ring-grape/30 focus-visible:outline-none sm:inline-flex lg:hidden xl:inline-flex"
             >
               Байланысу
             </a>

@@ -17,6 +17,7 @@ export const navItems = [
   { href: "#about", label: "Біз туралы" },
   { href: "#advantages", label: "Артықшылықтар" },
   { href: "#gallery", label: "Фотосуреттер" },
+  { href: "#documents", label: "Құжаттар" },
   { href: "#contacts", label: "Байланыс" },
 ] as const;
 

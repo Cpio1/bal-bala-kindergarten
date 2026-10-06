@@ -6,6 +6,7 @@ import { About } from "@/components/sections/About";
 import { Advantages } from "@/components/sections/Advantages";
 import { Stats } from "@/components/sections/Stats";
 import { Gallery } from "@/components/sections/Gallery";
+import { Documents } from "@/components/sections/Documents";
 import { Contacts } from "@/components/sections/Contacts";
 
 /**
@@ -37,6 +38,7 @@ export default function Home() {
       <Advantages />
       <Stats />
       <Gallery items={gallery} />
+      <Documents />
       <Contacts />
     </>
   );
