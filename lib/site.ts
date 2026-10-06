@@ -20,8 +20,8 @@ export const site = {
   heroCandidates: ["/images/hero.jpg", "/images/hero.jpeg", "/images/hero.png", "/images/hero.webp"],
 };
 
-/** Ссылка на папку с документами в Google Drive (раздел «Құжаттар»). Замените на настоящую ссылку. */
-export const documentsUrl = "GOOGLE_DRIVE_LINK";
+/** Ссылка на папку с документами в Google Drive (раздел «Құжаттар») */
+export const documentsUrl = "https://drive.google.com/drive/folders/1B4H26Z3t7V11su5EGxZpaqw2FHqohL5w";
 
 /** Ссылка на карту по адресу (открывается в новой вкладке). */
 export const mapLinkUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(

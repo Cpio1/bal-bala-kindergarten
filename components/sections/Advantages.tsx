@@ -20,7 +20,7 @@ const shapes = [
 
 export function Advantages() {
   return (
-    <section id="advantages" aria-labelledby="advantages-title" className="relative bg-mist py-24 sm:py-32">
+    <section id="advantages" aria-labelledby="advantages-title" className="relative bg-mist py-16 sm:py-20">
       <Wave className="pointer-events-none absolute bottom-full left-0 text-mist" />
       <Cloud className="animate-float-slow pointer-events-none absolute top-10 right-[6%] hidden w-28 text-white md:block" />
       <Star className="pointer-events-none absolute top-24 left-[8%] h-5 w-5 text-sun" />
@@ -41,7 +41,7 @@ export function Advantages() {
                     "group relative h-full overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-card-hover",
                     shapes[i],
                     !featured && "shadow-card ring-1 ring-ink/5",
-                    featured ? "p-7 sm:p-10" : "p-5 sm:p-7",
+                    featured ? "p-7 sm:p-8" : "p-5 sm:p-6",
                   )}
                 >
                   {/* Декор в широких карточках */}
@@ -72,7 +72,7 @@ export function Advantages() {
                   <h3
                     className={cn(
                       "relative font-black tracking-tight text-ink",
-                      featured ? "mt-8 text-2xl sm:text-[1.75rem]" : "mt-5 text-lg leading-snug sm:text-xl",
+                      featured ? "mt-6 text-2xl sm:text-[1.75rem]" : "mt-5 text-lg leading-snug sm:text-xl",
                     )}
                   >
                     {title}

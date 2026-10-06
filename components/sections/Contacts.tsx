@@ -11,12 +11,12 @@ const rows = [
 
 export function Contacts() {
   return (
-    <section id="contacts" aria-labelledby="contacts-title" className="relative bg-cream py-24 sm:py-32">
+    <section id="contacts" aria-labelledby="contacts-title" className="relative bg-cream py-16 sm:py-20">
       <Wave className="pointer-events-none absolute bottom-full left-0 text-cream" />
 
       <div className="container-x">
         <Reveal>
-          <div className="relative isolate overflow-hidden rounded-[40px] rounded-tr-[110px] bg-grape px-5 py-10 text-white shadow-soft sm:rounded-[64px] sm:rounded-tr-[160px] sm:px-12 sm:py-14 lg:px-16 lg:py-16">
+          <div className="relative isolate overflow-hidden rounded-[40px] rounded-tr-[110px] bg-grape px-5 py-10 text-white shadow-soft sm:rounded-[64px] sm:rounded-tr-[160px] sm:px-10 sm:py-12 lg:px-12 lg:py-12">
             {/* Мягкие пятна и декор внутри блока */}
             <div className="pointer-events-none absolute -top-24 -left-24 -z-10 h-72 w-72 rounded-full bg-rose/40 blur-3xl" aria-hidden="true" />
             <div className="pointer-events-none absolute -right-16 -bottom-32 -z-10 h-80 w-80 rounded-full bg-sun/25 blur-3xl" aria-hidden="true" />
@@ -29,7 +29,7 @@ export function Contacts() {
                 <p className="inline-flex -rotate-2 rounded-full bg-white/15 px-4 py-1.5 text-sm font-extrabold">Байланыс</p>
                 <h2
                   id="contacts-title"
-                  className="mt-5 text-[2.5rem] leading-[1.02] font-black tracking-[-0.03em] text-balance sm:text-5xl lg:text-[3.5rem]"
+                  className="mt-5 text-[2.5rem] leading-[1.02] font-black tracking-[-0.03em] text-balance sm:text-[2.75rem] lg:text-[2.75rem]"
                 >
                   Бізбен байланысыңыз
                 </h2>
@@ -70,7 +70,7 @@ export function Contacts() {
 
                 <a
                   href={site.phoneHref}
-                  className="group mt-8 inline-flex h-16 w-full items-center justify-center gap-3 rounded-full bg-sun px-10 text-xl font-black text-ink shadow-[0_16px_34px_-16px_rgb(255_214_51/0.9)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white focus-visible:ring-4 focus-visible:ring-white/60 focus-visible:outline-none sm:w-auto"
+                  className="group mt-8 inline-flex h-16 w-full items-center justify-center gap-3 rounded-full bg-sun px-10 text-xl sm:h-14 sm:px-8 sm:text-lg font-black text-ink shadow-[0_16px_34px_-16px_rgb(255_214_51/0.9)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white focus-visible:ring-4 focus-visible:ring-white/60 focus-visible:outline-none sm:w-auto"
                 >
                   <Phone className="h-6 w-6 transition-transform duration-300 group-hover:rotate-12" aria-hidden="true" />
                   Қоңырау шалу

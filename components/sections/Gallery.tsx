@@ -7,7 +7,7 @@ import { GalleryGrid } from "./GalleryGrid";
 /** items — фото из public/images (собираются на сервере в app/page.tsx) */
 export function Gallery({ items }: { items: GalleryImage[] }) {
   return (
-    <section id="gallery" aria-labelledby="gallery-title" className="relative bg-white py-24 sm:py-32">
+    <section id="gallery" aria-labelledby="gallery-title" className="relative bg-white py-16 sm:py-20">
       <Wave className="pointer-events-none absolute bottom-full left-0 -scale-x-100 text-white" />
       <Balloon className="animate-sway pointer-events-none absolute top-16 left-[5%] hidden w-10 text-grape/60 md:block" />
       <Cloud className="animate-float-slow pointer-events-none absolute top-24 right-[5%] hidden w-28 text-mint-soft md:block" />

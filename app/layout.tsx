@@ -42,7 +42,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         >
           Негізгі мазмұнға өту
         </a>
-        <Header logo={<Logo src={logoSrc} priority />} />
+        <Header logo={<Logo src={logoSrc} className="h-12 lg:h-10" priority />} />
         <main id="main" className="overflow-x-clip">{children}</main>
         <Footer logo={<Logo src={logoSrc} className="h-14" />} />
       </body>

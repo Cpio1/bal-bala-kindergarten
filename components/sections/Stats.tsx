@@ -15,7 +15,7 @@ export function Stats() {
   const [age, groups, language, meals, hours] = stats;
 
   return (
-    <section aria-labelledby="stats-title" className="relative bg-cream py-24 sm:py-32">
+    <section aria-labelledby="stats-title" className="relative bg-cream py-16 sm:py-20">
       <Wave className="pointer-events-none absolute bottom-full left-0 text-cream" />
 
       <div className="container-x">
@@ -29,14 +29,14 @@ export function Stats() {
               </li>
 
               {/* Главная цифра — фиолетовая «капля» */}
-              <li className="group relative col-span-2 flex min-h-64 flex-col justify-between overflow-hidden rounded-[32px] rounded-tr-[96px] bg-grape p-6 text-white shadow-soft sm:p-9 lg:col-span-4 lg:row-span-2">
+              <li className="group relative col-span-2 flex min-h-64 flex-col justify-between overflow-hidden rounded-[32px] rounded-tr-[96px] bg-grape p-6 text-white shadow-soft sm:p-7 lg:col-span-4 lg:row-span-2">
                 <Sun className="animate-spin-slow absolute -top-8 -right-8 h-36 w-36 text-sun/90" />
                 <Star className="absolute bottom-8 right-8 h-6 w-6 text-white/30" />
                 <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15">
                   <age.icon className="h-7 w-7" aria-hidden="true" />
                 </span>
                 <span className="mt-10 block">
-                  <span className="block text-7xl leading-[0.9] font-black tracking-[-0.04em] sm:text-7xl lg:text-[5rem]">{age.value}</span>
+                  <span className="block text-7xl leading-[0.9] font-black tracking-[-0.04em] sm:text-6xl lg:text-[4rem]">{age.value}</span>
                   <span className="mt-3 block text-lg font-bold text-white/80">{age.label}</span>
                 </span>
               </li>
@@ -51,7 +51,7 @@ export function Stats() {
                   <hours.icon className="h-7 w-7" aria-hidden="true" />
                 </span>
                 <span className="text-lg font-bold text-muted">{hours.label}</span>
-                <span className="text-4xl leading-none font-black tracking-tight text-ink sm:ml-auto sm:text-5xl">{hours.value}</span>
+                <span className="text-4xl leading-none font-black tracking-tight text-ink sm:ml-auto sm:text-4xl">{hours.value}</span>
                 <Pencil className="pointer-events-none absolute right-6 -bottom-1 hidden w-24 -rotate-6 text-rose md:block lg:right-auto lg:left-1/2" />
               </li>
             </ul>
@@ -76,7 +76,7 @@ function StatTile({ fact, className, shape }: { fact: (typeof stats)[number]; cl
         <Icon className="h-6 w-6" aria-hidden="true" />
       </span>
       <span className="block">
-        <span className="block text-[1.6rem] leading-none font-black tracking-[-0.03em] text-ink min-[400px]:text-3xl sm:text-5xl">
+        <span className="block text-[1.6rem] leading-none font-black tracking-[-0.03em] text-ink min-[400px]:text-3xl sm:text-4xl">
           {value}
         </span>
         <span className="mt-2 block text-sm font-bold text-muted sm:text-base">{label}</span>

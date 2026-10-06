@@ -20,7 +20,7 @@ const badgeDelays = ["0s", "1.5s", "0.8s", "2.2s"];
  */
 export function Hero({ image }: { image: GalleryImage | null }) {
   return (
-    <section id="home" aria-labelledby="hero-title" className="relative z-10 pt-6 sm:pt-10 lg:pt-12">
+    <section id="home" aria-labelledby="hero-title" className="relative z-10 pt-6 sm:pt-8 lg:pt-8">
       {/* Фон: мягкие пятна и облака */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
         <div className="absolute -top-32 -right-24 h-[26rem] w-[26rem] rounded-full bg-grape-soft blur-3xl" />
@@ -40,7 +40,7 @@ export function Hero({ image }: { image: GalleryImage | null }) {
 
         <h1
           id="hero-title"
-          className="mx-auto mt-6 max-w-5xl text-[2.75rem] leading-[0.98] font-black tracking-[-0.035em] text-balance text-ink min-[400px]:text-5xl sm:text-[4rem] lg:text-[5.5rem]"
+          className="mx-auto mt-6 max-w-5xl text-[2.75rem] leading-[0.98] font-black tracking-[-0.035em] text-balance text-ink min-[400px]:text-5xl sm:text-[3.5rem] lg:text-[4.25rem]"
         >
           Балдай{" "}
           <span className="relative inline-block text-grape">
@@ -50,11 +50,11 @@ export function Hero({ image }: { image: GalleryImage | null }) {
           балалық шақ
         </h1>
 
-        <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-pretty text-muted sm:text-xl">
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-muted">
           bal-bala1 балабақшасында әр балаға мейірім, қамқорлық және жан-жақты даму үшін жайлы орта қалыптастырамыз.
         </p>
 
-        <div className="mt-9 flex flex-col justify-center gap-3 min-[420px]:flex-row">
+        <div className="mt-8 flex flex-col justify-center gap-3 min-[420px]:flex-row">
           <a
             href="#contacts"
             className="group inline-flex h-14 items-center justify-center gap-2 rounded-full bg-grape px-8 text-lg font-extrabold text-white shadow-[0_14px_30px_-14px_rgb(165_38_213/0.8)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-grape-deep focus-visible:ring-4 focus-visible:ring-grape/30 focus-visible:outline-none"
@@ -72,14 +72,14 @@ export function Hero({ image }: { image: GalleryImage | null }) {
       </div>
 
       {/* Фото-сцена: выходит за нижний край секции */}
-      <div className="container-x relative mt-14 -mb-20 sm:mt-14 sm:-mb-24">
-        <div className="relative mx-auto max-w-[54rem]">
+      <div className="container-x relative mt-12 -mb-20 sm:mt-8 sm:-mb-20">
+        <div className="relative mx-auto max-w-[42rem]">
           {/* Цветная «тень»-форма за фото */}
           <div className="shape-hero absolute inset-0 translate-x-1.5 translate-y-4 rotate-1 bg-grape-soft sm:translate-x-6 sm:rotate-2 sm:translate-y-6" aria-hidden="true" />
 
-          <Sun className="animate-spin-slow absolute -top-10 right-2 z-20 h-20 w-20 text-sun sm:-top-12 sm:right-10 sm:h-24 sm:w-24" />
-          <Balloon className="animate-sway absolute -top-16 left-2 z-20 hidden w-10 text-rose sm:block lg:-left-6 lg:w-10" />
-          <Pencil className="absolute -bottom-2 -left-2 z-20 hidden w-24 -rotate-[20deg] text-mint-bright md:block lg:-left-10" />
+          <Sun className="animate-spin-slow absolute -top-10 right-2 z-20 h-20 w-20 text-sun sm:-top-10 sm:right-10 sm:h-20 sm:w-20" />
+          <Balloon className="animate-sway absolute -top-16 left-2 z-20 hidden w-10 text-rose sm:block lg:-left-6 lg:w-9" />
+          <Pencil className="absolute -bottom-2 -left-2 z-20 hidden w-20 -rotate-[20deg] text-mint-bright md:block lg:-left-10" />
           <Flower className="animate-float absolute top-1/2 -right-3 z-20 hidden h-9 w-9 text-grape/70 lg:-right-8 lg:block" />
           <span className="absolute bottom-10 left-1/2 z-20 hidden md:block">
             <Block letter="Ә" className="h-12 rotate-6 bg-sun text-ink" />
@@ -88,7 +88,7 @@ export function Hero({ image }: { image: GalleryImage | null }) {
           <ShapedPhoto
             image={image}
             priority
-            sizes="(min-width: 1024px) 864px, 100vw"
+            sizes="(min-width: 1024px) 588px, 100vw"
             className="shape-hero relative z-10 aspect-[5/4] shadow-soft ring-[8px] ring-white sm:aspect-[16/10] sm:ring-[12px]"
           />
 

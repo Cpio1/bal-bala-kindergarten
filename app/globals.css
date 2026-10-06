@@ -37,6 +37,22 @@
     scroll-padding-top: 6.5rem; /* высота шапки, чтобы якоря не прятались под ней */
   }
 
+  /*
+   * Общий масштаб: все размеры в rem, поэтому на планшете и desktop сайт пропорционально
+   * компактнее (15px и 14px вместо 16px). Телефон — без изменений.
+   * Брейкпоинты в медиазапросах от этого не сдвигаются.
+   */
+  @media (width >= 48rem) {
+    html {
+      font-size: 93.75%;
+    }
+  }
+  @media (width >= 64rem) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+
   body {
     background-color: var(--color-cream);
     color: var(--color-ink);
@@ -52,7 +68,7 @@
   }
 }
 
-/* Контейнер: до 1200px по центру; 16px по бокам на телефоне, на больших экранах — больше воздуха */
+/* Контейнер: 75rem — около 1050px на desktop (при базовых 14px), по центру; 16px по бокам на телефоне */
 @utility container-x {
   width: 100%;
   max-width: 75rem;
@@ -63,13 +79,13 @@
     padding-inline: 1.5rem;
   }
   @media (width >= 48rem) {
-    padding-inline: 2.5rem;
+    padding-inline: 2rem;
   }
   @media (width >= 64rem) {
-    padding-inline: 3rem;
+    padding-inline: 2.5rem;
   }
   @media (width >= 80rem) {
-    padding-inline: 4rem;
+    padding-inline: 3rem;
   }
 }
 

@@ -57,7 +57,7 @@ export function Header({ logo }: { logo: ReactNode }) {
       <header className="sticky top-0 z-50 px-3 pt-3 sm:px-5 lg:px-8">
         <div
           className={cn(
-            "mx-auto flex h-16 max-w-[72rem] items-center justify-between gap-4 rounded-full pr-2 pl-3 ring-1 transition-all duration-300 sm:pl-4",
+            "mx-auto flex h-16 max-w-[72rem] items-center lg:h-14 justify-between gap-4 rounded-full pr-2 pl-3 ring-1 transition-all duration-300 sm:pl-4",
             scrolled || open
               ? "bg-white/85 shadow-[0_14px_40px_-22px_rgb(96_30_130/0.45)] ring-grape/10 backdrop-blur-md"
               : "bg-white/60 ring-grape/5 backdrop-blur-sm",
@@ -78,7 +78,7 @@ export function Header({ logo }: { logo: ReactNode }) {
                   <a
                     href={item.href}
                     className={cn(
-                      "rounded-full px-4 py-2 text-[15px] font-bold transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-grape/40 focus-visible:outline-none",
+                      "rounded-full px-4 py-2 text-[15px] font-bold lg:px-3 lg:text-[14px] xl:px-3.5 transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-grape/40 focus-visible:outline-none",
                       active === item.href ? "bg-grape-soft text-grape-deep" : "text-ink/75 hover:bg-grape-soft/70 hover:text-grape-deep",
                     )}
                   >
@@ -93,7 +93,7 @@ export function Header({ logo }: { logo: ReactNode }) {
           <div className="flex items-center gap-2">
             <a
               href="#contacts"
-              className="hidden h-12 items-center rounded-full bg-grape px-6 text-[15px] font-bold text-white transition-all duration-300 shadow-[0_10px_24px_-12px_rgb(165_38_213/0.7)] hover:-translate-y-0.5 hover:bg-grape-deep focus-visible:ring-4 focus-visible:ring-grape/30 focus-visible:outline-none sm:inline-flex lg:hidden xl:inline-flex"
+              className="hidden h-12 items-center rounded-full bg-grape px-6 text-[15px] font-bold lg:h-10 lg:px-5 lg:text-[14px] text-white transition-all duration-300 shadow-[0_10px_24px_-12px_rgb(165_38_213/0.7)] hover:-translate-y-0.5 hover:bg-grape-deep focus-visible:ring-4 focus-visible:ring-grape/30 focus-visible:outline-none sm:inline-flex lg:hidden xl:inline-flex"
             >
               Байланысу
             </a>
