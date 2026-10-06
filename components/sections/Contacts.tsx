@@ -29,7 +29,7 @@ export function Contacts() {
                 <p className="inline-flex -rotate-2 rounded-full bg-white/15 px-4 py-1.5 text-sm font-extrabold">Байланыс</p>
                 <h2
                   id="contacts-title"
-                  className="mt-5 text-[2.5rem] leading-[1.02] font-black tracking-[-0.03em] text-balance sm:text-5xl lg:text-[4rem]"
+                  className="mt-5 text-[2.5rem] leading-[1.02] font-black tracking-[-0.03em] text-balance sm:text-5xl lg:text-[3.5rem]"
                 >
                   Бізбен байланысыңыз
                 </h2>

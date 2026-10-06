@@ -54,10 +54,10 @@ export function Header({ logo }: { logo: ReactNode }) {
   return (
     <>
       {/* «Парящая» шапка-таблетка; без тёмной полосы сверху */}
-      <header className="sticky top-0 z-50 px-3 pt-3 sm:px-5">
+      <header className="sticky top-0 z-50 px-3 pt-3 sm:px-5 lg:px-8">
         <div
           className={cn(
-            "mx-auto flex h-16 max-w-[76rem] items-center justify-between gap-4 rounded-full pr-2 pl-3 ring-1 transition-all duration-300 sm:pl-4",
+            "mx-auto flex h-16 max-w-[72rem] items-center justify-between gap-4 rounded-full pr-2 pl-3 ring-1 transition-all duration-300 sm:pl-4",
             scrolled || open
               ? "bg-white/85 shadow-[0_14px_40px_-22px_rgb(96_30_130/0.45)] ring-grape/10 backdrop-blur-md"
               : "bg-white/60 ring-grape/5 backdrop-blur-sm",

@@ -7,6 +7,8 @@ type ShapedPhotoProps = {
   image: GalleryImage | null;
   /** Форма и размер: например "shape-hero aspect-[4/3]" */
   className?: string;
+  /** Например { aspectRatio } — чтобы форма была ровно по пропорциям фото */
+  style?: React.CSSProperties;
   sizes: string;
   priority?: boolean;
 };
@@ -16,9 +18,9 @@ type ShapedPhotoProps = {
  * Само фото показывается целиком (object-contain), а свободное место внутри формы
  * заполняет размытая копия того же снимка — так форма всегда красивая при любых пропорциях.
  */
-export function ShapedPhoto({ image, className, sizes, priority }: ShapedPhotoProps) {
+export function ShapedPhoto({ image, className, style, sizes, priority }: ShapedPhotoProps) {
   return (
-    <div className={cn("group relative isolate overflow-hidden bg-shell", className)}>
+    <div className={cn("group relative isolate overflow-hidden bg-shell", className)} style={style}>
       {image ? (
         <>
           <Image

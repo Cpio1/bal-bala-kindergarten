@@ -36,7 +36,7 @@ export function Stats() {
                   <age.icon className="h-7 w-7" aria-hidden="true" />
                 </span>
                 <span className="mt-10 block">
-                  <span className="block text-7xl leading-[0.9] font-black tracking-[-0.04em] sm:text-8xl">{age.value}</span>
+                  <span className="block text-7xl leading-[0.9] font-black tracking-[-0.04em] sm:text-7xl lg:text-[5rem]">{age.value}</span>
                   <span className="mt-3 block text-lg font-bold text-white/80">{age.label}</span>
                 </span>
               </li>
@@ -51,7 +51,7 @@ export function Stats() {
                   <hours.icon className="h-7 w-7" aria-hidden="true" />
                 </span>
                 <span className="text-lg font-bold text-muted">{hours.label}</span>
-                <span className="text-4xl leading-none font-black tracking-tight text-ink sm:ml-auto sm:text-6xl">{hours.value}</span>
+                <span className="text-4xl leading-none font-black tracking-tight text-ink sm:ml-auto sm:text-5xl">{hours.value}</span>
                 <Pencil className="pointer-events-none absolute right-6 -bottom-1 hidden w-24 -rotate-6 text-rose md:block lg:right-auto lg:left-1/2" />
               </li>
             </ul>

@@ -72,7 +72,7 @@ export function Advantages() {
                   <h3
                     className={cn(
                       "relative font-black tracking-tight text-ink",
-                      featured ? "mt-8 text-2xl sm:text-[2rem]" : "mt-5 text-lg leading-snug sm:text-xl",
+                      featured ? "mt-8 text-2xl sm:text-[1.75rem]" : "mt-5 text-lg leading-snug sm:text-xl",
                     )}
                   >
                     {title}

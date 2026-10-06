@@ -34,7 +34,7 @@ export function Documents() {
               </span>
 
               <div className="min-w-0 flex-1">
-                <h3 className="pr-10 text-2xl font-black tracking-tight text-ink sm:pr-0 sm:text-[2rem]">Балабақша құжаттары</h3>
+                <h3 className="pr-10 text-2xl font-black tracking-tight text-ink sm:pr-0 sm:text-[1.75rem]">Балабақша құжаттары</h3>
                 <p className="mt-2 text-base leading-relaxed text-pretty text-muted sm:text-lg">
                   Қажетті құжаттарды Google Drive арқылы көре аласыз
                 </p>

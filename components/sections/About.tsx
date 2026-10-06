@@ -17,7 +17,7 @@ export function About({ image }: { image: GalleryImage | null }) {
     <section id="about" aria-labelledby="about-title" className="relative bg-white pt-36 pb-24 sm:pt-48 sm:pb-32">
       <Wave className="pointer-events-none absolute bottom-full left-0 text-white" />
       <div className="container-x grid items-center gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
-        <Reveal className="relative mx-auto w-full max-w-[26rem] lg:max-w-none">
+        <Reveal className="relative mx-auto w-full max-w-[24rem] lg:max-w-[26rem]">
           <Rainbow className="absolute -top-8 -left-4 z-10 w-28 sm:-left-10 sm:w-36" />
           <Cloud className="animate-float-slow absolute top-1/3 -right-2 z-10 w-24 text-white drop-shadow-[0_8px_16px_rgb(96_30_130/0.15)] sm:-right-10 sm:w-28" />
           <Flower className="animate-float absolute -bottom-4 left-6 z-10 h-10 w-10 text-rose" />
@@ -26,8 +26,10 @@ export function About({ image }: { image: GalleryImage | null }) {
           <div className="shape-arch absolute inset-0 -translate-x-4 translate-y-4 bg-sun-soft sm:-translate-x-6 sm:translate-y-6" aria-hidden="true" />
           <ShapedPhoto
             image={image}
-            sizes="(min-width: 1024px) 480px, 420px"
-            className="shape-arch relative aspect-[4/5] shadow-soft"
+            sizes="(min-width: 1024px) 416px, 384px"
+            className="shape-arch relative shadow-soft"
+            // Форма ровно по пропорциям фото — без пустого места снизу
+            style={{ aspectRatio: image?.aspect ?? 4 / 5 }}
           />
         </Reveal>
 
@@ -46,7 +48,7 @@ export function About({ image }: { image: GalleryImage | null }) {
                 <MainIcon className="h-6 w-6" aria-hidden="true" />
               </span>
               <span className="mt-8 block">
-                <span className="block text-4xl leading-none font-black tracking-tight text-grape sm:text-5xl">
+                <span className="block text-4xl leading-none font-black tracking-tight text-grape sm:text-[2.75rem]">
                   {main.value}
                 </span>
                 <span className="mt-2 block text-[15px] font-bold text-ink/70">{main.label}</span>

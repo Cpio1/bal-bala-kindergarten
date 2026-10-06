@@ -38,7 +38,7 @@ export function SectionHeading({
       )}
       <h2
         id={id}
-        className="mt-5 text-[2.5rem] leading-[1.02] font-black tracking-[-0.03em] text-balance text-ink sm:text-5xl lg:text-[4rem]"
+        className="mt-5 text-[2.5rem] leading-[1.02] font-black tracking-[-0.03em] text-balance text-ink sm:text-5xl lg:text-[3.5rem]"
       >
         {title}
       </h2>
