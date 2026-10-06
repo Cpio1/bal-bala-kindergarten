@@ -20,7 +20,7 @@ export function Gallery({ items }: { items: GalleryImage[] }) {
             eyebrow="Фотосуреттер"
             tone="mint"
             title="Біздің балабақша"
-            description="Bal-bala балабақшасындағы жарқын сәттер"
+            description="bal-bala1 балабақшасындағы жарқын сәттер"
           />
         </Reveal>
 

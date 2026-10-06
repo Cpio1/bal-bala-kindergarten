@@ -1,4 +1,4 @@
-# Bal-bala балабақшасы — лендинг
+# bal-bala1 балабақшасы — лендинг
 
 Next.js 15 · TypeScript · Tailwind CSS 4
 

@@ -51,7 +51,7 @@ export function Hero({ image }: { image: GalleryImage | null }) {
         </h1>
 
         <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-pretty text-muted sm:text-xl">
-          Bal-bala балабақшасында әр балаға мейірім, қамқорлық және жан-жақты даму үшін жайлы орта қалыптастырамыз.
+          bal-bala1 балабақшасында әр балаға мейірім, қамқорлық және жан-жақты даму үшін жайлы орта қалыптастырамыз.
         </p>
 
         <div className="mt-9 flex flex-col justify-center gap-3 min-[420px]:flex-row">

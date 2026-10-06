@@ -27,7 +27,7 @@ export function Advantages() {
 
       <div className="container-x">
         <Reveal>
-          <SectionHeading id="advantages-title" align="center" eyebrow="Артықшылықтар" tone="grape" title="Неліктен Bal-bala?" />
+          <SectionHeading id="advantages-title" align="center" eyebrow="Артықшылықтар" tone="grape" title="Неліктен bal-bala1?" />
         </Reveal>
 
         <ul className="mt-12 grid grid-cols-2 gap-3 sm:mt-16 sm:gap-5 lg:grid-cols-4">

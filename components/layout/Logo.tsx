@@ -9,7 +9,7 @@ type LogoProps = {
 };
 
 /**
- * Логотип Bal-bala. Высота задаётся через className (например "h-12"),
+ * Логотип bal-bala1. Высота задаётся через className (например "h-12"),
  * ширина — автоматически, поэтому пропорции не искажаются и логотип не обрезается.
  */
 export function Logo({ src, className = "h-12", priority }: LogoProps) {
@@ -31,7 +31,7 @@ export function Logo({ src, className = "h-12", priority }: LogoProps) {
   return (
     <Image
       src={src}
-      alt="Bal-bala логотипі"
+      alt="bal-bala1 логотипі"
       width={0}
       height={0}
       sizes="240px"

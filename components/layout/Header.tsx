@@ -66,7 +66,7 @@ export function Header({ logo }: { logo: ReactNode }) {
           <a href="#home" className="flex shrink-0 items-center gap-3 rounded-2xl focus-visible:ring-2 focus-visible:ring-grape/40 focus-visible:outline-none" onClick={() => setOpen(false)}>
             {logo}
             <span className="text-lg leading-tight font-extrabold tracking-tight text-ink">
-              Bal-bala
+              bal-bala1
               <span className="block text-sm font-bold text-grape">балабақшасы</span>
             </span>
           </a>

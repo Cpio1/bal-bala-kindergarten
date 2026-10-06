@@ -20,7 +20,7 @@ export default function Home() {
 
   const heroSrc = findPublicFile(site.heroCandidates);
   const hero: GalleryImage | null = heroSrc
-    ? { src: heroSrc, alt: "Bal-bala балабақшасындағы балалар" }
+    ? { src: heroSrc, alt: `${site.name}ндағы балалар` }
     : (gallery[0] ?? null);
   // Для «Біз туралы» — следующее фото после обложки, чтобы снимки не повторялись
   const aboutImage = (heroSrc ? gallery[0] : gallery[1]) ?? hero;

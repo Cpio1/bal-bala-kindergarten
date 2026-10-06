@@ -112,4 +112,4 @@ export const imageOverrides: Record<string, Partial<Omit<GalleryImage, "src">>> 
   // "image1.jpg": { alt: "Балалар ойын бөлмесінде", position: "50% 20%" },
 };
 
-export const defaultImageAlt = (n: number) => `Bal-bala балабақшасындағы сәт, ${n}-фотосурет`;
+export const defaultImageAlt = (n: number) => `bal-bala1 балабақшасындағы сәт, ${n}-фотосурет`;

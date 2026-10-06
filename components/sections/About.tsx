@@ -32,9 +32,9 @@ export function About({ image }: { image: GalleryImage | null }) {
         </Reveal>
 
         <Reveal delay={120}>
-          <SectionHeading id="about-title" eyebrow="Біз туралы" tone="rose" title="Bal-bala туралы" />
+          <SectionHeading id="about-title" eyebrow="Біз туралы" tone="rose" title="bal-bala1 туралы" />
           <p className="mt-6 text-lg leading-relaxed text-pretty text-muted sm:text-xl">
-            Bal-bala — 2 жастан 6 жасқа дейінгі балаларға арналған қазақ тіліндегі балабақша. Біз балалардың
+            bal-bala1 балабақшасы — 2 жастан 6 жасқа дейінгі балаларға арналған қазақ тіліндегі балабақша. Біз балалардың
             қауіпсіз, жайлы және қызықты ортада өсіп, жаңа білім алып, достарымен бірге дамуына жағдай жасаймыз.
           </p>
 
